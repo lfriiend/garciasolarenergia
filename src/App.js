@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import MenuMobile from "./components/MenuMobile";
+import Home from "./components/Home";
+import Header from "./components/Header";
+import About from "./components/About";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
 
 function App() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MenuMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
+      <Header />
+      <Home />
+      <About />
+      <Testimonials />
+      <Contact />
     </div>
   );
 }

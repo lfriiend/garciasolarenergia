@@ -1,0 +1,149 @@
+.container-contact {
+  padding-block: 100px;
+  background-color: #f2f2f2;
+
+  h4,
+  h2 {
+    color: #1859b4;
+    text-transform: uppercase;
+  }
+
+
+
+  .grid-contact {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 300px;
+    justify-content: space-between;
+    line-height: 2;
+
+    svg {
+      color: #1859b4;
+    }
+
+    .social-medias {
+      width: 33%;
+
+      p {
+        line-height: 2;
+      }
+
+      h4 {
+        font-weight: 600;
+      }
+
+      .social-links {
+        align-items: center;
+
+        a {
+          margin-right: 15px;
+        }
+      }
+
+      .copyright {
+        padding-top: 120px;
+      }
+    }
+
+    .contacts {
+      width: 30%;
+
+      svg {
+        padding-right: 10px;
+      }
+
+      .phone,
+      .services {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .services span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.form {
+  width: 30%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+      border: none;
+      padding: 8px;
+      margin: 3px;
+      background-color: #FFFFFF;
+    }
+
+    input[type='submit'] {
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: white;
+      width: 50%;
+      padding: 10px;
+      border: none;
+      text-transform: uppercase;
+      background-color: #1859b4;
+    }
+
+    input[type="submit"]:hover {
+      cursor: pointer;
+      filter: brightness(0.9);
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+
+  .copyright {
+    padding-top: 20px !important;
+  }
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 0;
+    align-items: center;
+
+    .grid-contact {
+      flex-direction: column;
+      align-items: center;
+      padding-inline: 0;
+      text-align: center;
+
+
+
+      .social-medias {
+        width: fit-content;
+      }
+
+      .contacts {
+        width: fit-content;
+      }
+
+      .services {
+        width: fit-content;
+        margin: 0 auto;
+        justify-content: center;
+        padding-bottom: 30px;
+
+        span {
+          justify-content: center;
+        }
+      }
+
+      .form {
+        width: fit-content;
+      }
+    }
+
+
+  }
+
+}
