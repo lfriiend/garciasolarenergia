@@ -1,6 +1,8 @@
 import './style.scss'
 import React, { useRef, useState } from "react";
-import House from '../../images/house.png'
+import Milton from '../../images/milton.jpeg'
+import Wagner from '../../images/wagner.jpeg'
+import Junior from '../../images/junior.jpeg'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import "swiper/css";
@@ -32,26 +34,26 @@ export default function CustomerSatisfaction() {
 						>
 							<SwiperSlide>
 								<div className='customer-card swiper-slide'>
-									<img src={House} alt="" />
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat condimentum facilisis. Quisque laoreet purus. Pellentesque placerat condimentum facilisis. Quisque laoreet purus </p>
-									<h4>Lucas</h4>
-									<span>Morador ZN</span>
+									<img src={Wagner} alt="" />
+									<p>"-Antes da energia solar, pagávamos todo mês na padaria cerca de 2.000,00 reais todo mês a Cemig, após a instalação além de pagarmos apenas 45 reais em conta de energia sobra todo mes 200 kwh acumulando em cada mês, foi o melhor investimento que tivemos aqui, consegui usar o forno elétrico sem me preocupar novamente." </p>
+									<h4>Wagner</h4>
+									<span>Caldas - MG</span>
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className='customer-card swiper-slide'>
-									<img src={House} alt="" />
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat condimentum facilisis. Quisque laoreet purus. Pellentesque placerat condimentum facilisis. Quisque laoreet purus</p>
-									<h4>Leandro</h4>
-									<span>Supermercado</span>
+									<img src={Junior} alt="" />
+									<p>"- Sem dúvidas colocar energia solar foi muito bom pra gente sabe... com essa instabilidade de Governo entra e sai, com um país aonde a SELIC muda demais, um investimento seguro como a energia solar que o retorno anual é em média 33% é perfeito, estamos falando 3 vezes o valor da taxa SELIC, hoje pagamos o minimo aqui e eu pago o mesmo valor na parcela que eu pagava na conta de energia... Troquei o boleto pelo mesmo valor, mas agora pago pelo que é meu."</p>
+									<h4>Junior</h4>
+									<span>Bandeira do Sul - MG</span>
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className='customer-card swiper-slide'>
-									<img src={House} alt="" />
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat condimentum facilisis. Quisque laoreet purus. Pellentesque placerat condimentum facilisis. Quisque laoreet purus</p>
-									<h4>Leonardo</h4>
-									<span>Morador ZL</span>
+									<img src={Milton} alt="" />
+									<p>"-Olha, falar sobre a energia solar pra gente aqui é até muito fácil e simples, nós instalamos, a conta veio apartir da ligação no minimo e estamos muito satisfeitos com os serviços prestados e os prazos de instalação."</p>
+									<h4>Milton</h4>
+									<span>Bandeira do Sul - MG</span>
 								</div>
 							</SwiperSlide>
 						</Swiper>

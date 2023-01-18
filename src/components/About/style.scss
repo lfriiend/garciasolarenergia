@@ -16,10 +16,12 @@
 
 .photo {
   grid-area: photo;
+  display: block;
 
   img {
+    margin-block: auto;
     width: 100%;
-    border-radius: 25px;
+    border-radius: 20px;
   }
 }
 
